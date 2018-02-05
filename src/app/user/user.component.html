@@ -1,0 +1,17 @@
+<div>
+<h2>User Details</h2>
+</div>
+<div *ngIf="userList">
+<table>
+  <tr>
+    <td>Id</td>
+    <td>Login</td>
+    <td>Avatar_Url</td>
+  </tr>
+  <tr *ngFor="let user of userList">
+    <td>{{user.id}}</td>
+    <td>{{user.login}}</td>
+    <td>{{user.avatar_url}}</td>
+  </tr>
+</table>
+</div>
